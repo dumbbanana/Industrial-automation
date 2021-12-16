@@ -36,33 +36,33 @@ run at higher starting current and voltage.
 
 - #### **FUSE**
 
-<img src="assets/images/fuse.png" alt="fuse" width="125"/>
+<img src="../assets/images/fuse.png" alt="fuse" width="125"/>
 
 
 - #### **MINATURE CIRCUIT BREAKER**
 
-<img src="assets/images/mcb.png" alt="mcb" width="125"/>
+<img src="../assets/images/mcb.png" alt="mcb" width="125"/>
 
 - #### **ISOLATOR**
 
-<img src="assets/images/isolator.png" alt="isolator" width="125"/>
+<img src="../assets/images/isolator.png" alt="isolator" width="125"/>
 
 - #### **CONTACTOR**
 
-<img src="assets/images/contactor.png" alt="contactor" width="175"/>
+<img src="../assets/images/contactor.png" alt="contactor" width="175"/>
 
 - #### **NORMALLY OPEN SWITCH**
 
-<img src="assets/images/no.png" alt="no" width="125"/>
+<img src="../assets/images/no.png" alt="no" width="125"/>
 
 - #### **NORMALLY CLOSED SWITCH**
 
-<img src="assets/images/nc.png" alt="nc" width="125"/>
+<img src="../assets/images/nc.png" alt="nc" width="125"/>
 
 - #### **DELTA CONFIG**
 
-<img src="assets/images/delta.png" alt="delta" width="125"/>
+<img src="../assets/images/delta.png" alt="delta" width="125"/>
 
 - #### **STAR CONFIG**
 
-<img src="assets/images/star.png" alt="star" width="125"/>
+<img src="../assets/images/star.png" alt="star" width="125"/>
