@@ -83,7 +83,7 @@ A timing relay is a simple form of time-based control, which opens or closes the
 
 ON delay timers turn on the load after the specified time, whereas OFF delay timers cuts the power to the load only after the specified delay time.
 
-<img src="../assets/images/Timers.jpg" alt="timer" width="300"/>
+<img src="../assets/images/Timers.JPG" alt="timer" width="300"/>
 
 <br>
 

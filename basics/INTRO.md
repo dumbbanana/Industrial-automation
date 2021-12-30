@@ -50,7 +50,7 @@ this would not use many inputs/ outputs and would only require a simple program.
 ``Appropriate for fixed input and fixed output(suitable for single/specific application)``
 <br />
 <br />
-![fixed](assets/images/Types-of-PLC-fixed.jpg)
+![fixed](../assets/images/Types-of-PLC-fixed.jpg)
 <br />
 <br />
 
@@ -69,7 +69,7 @@ your PLC control system.
 ``Suitable for fexible input and output devices (scalable)``
 <br />
 <br />
-![modular](assets/images/Types-of-PLC-modular.png)
+![modular](../assets/images/Types-of-PLC-modular.png)
 <br />
 <br />
 
