@@ -1,12 +1,12 @@
-# MITSHUBISHI Programmable Logic Controller
+# MITSUBISHI Programmable Logic Controller
 
-We are starting with a PLC controller from Mitshubishi. 
+We are starting with a PLC controller from Mitsubishi. 
 
 - Mitsubishi offer 2 types of plc controllers mainly,
     - Q series (rack type)
     - fx series (modular type)
 
-The software offered by Mitshubishi to program their products called GX works
+The software offered by Mitsubishi to program their products called GX works
 - GX work 2 for Q series and older models 
 - GX work 3 for FX series
 
@@ -14,19 +14,19 @@ The software offered by Mitshubishi to program their products called GX works
 
 For training, we used Model FX - 5u; which is a compact 24V DC PLC controller with 16 input and 16 output ports and output ports were relay type, which means output from plc can be DC or AC depending on the power supply connected to output common port.
 
-<img src="../../asssets/images/../../assets/images/mitshubishi/download.jpg" alt="modelpic" width="300"/>
+<img src="../../assets/images/mitsubishi/download.jpg" alt="modelpic" width="300"/>
 
 <br>
 
 ### Outline
 
-<img src="../../asssets/images/../../assets/images/mitshubishi/label.png" alt="label" width="500"/>
+<img src="../../assets/images/mitsubishi/label.png" alt="label" width="500"/>
 
 <br>
 
 ### Internal configuration
 
-<img src="../../asssets/images/../../assets/images/mitshubishi/figure2.png" alt="figure2" width="500"/>
+<img src="../../assets/images/mitsubishi/figure2.png" alt="figure2" width="500"/>
 
 <br>
 <br>
@@ -35,7 +35,7 @@ As the figure above shows contacts in ladder programs are triggered by the power
 
 This means a stop button on the panel which is normally closed is mentioned as normally open contact in the program. This could be confusing as the way I like to put to imagine the contact on panels are perpendicular to contacts on the program which are triggered only when current passes through them as the figure below shows.
 
-<img src="../../asssets/images/../../assets/images/mitshubishi/fig3.png" alt="figure2" width="400"/>
+<img src="../../assets/images/mitsubishi/fig3.png" alt="figure2" width="400"/>
 
 <br>
 Since the NC from the panel is already triggering the port on the controller using a NO in the programming will operate as the circuit as designed 

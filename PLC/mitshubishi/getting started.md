@@ -11,7 +11,7 @@ project -> new
 - select the model type
 - then select the programming language
 
-<img src="../../assets/images/mitshubishi/new.png" alt="new.png" width="250"/>
+<img src="../../assets/images/mitsubishi/new.png" alt="new.png" width="250"/>
 
 <br>
 PLC can be programmed with languages such as Ladder diagram, Function block diagram, Sequential flow chart, Instruction list, Structural text.
@@ -24,7 +24,7 @@ To reset the controller from GX works, while downloading a new program to the co
 navigation -> parameter -> fx 5u cpu -> cpu parameter -> operation related setting -> remote reset setting -> enable
 ```
 
-<img src="../../assets/images/mitshubishi/reset.png" alt="remote.png" width="600"/>
+<img src="../../assets/images/mitsubishi/reset.png" alt="remote.png" width="600"/>
 
 ### Programing Tab
 
@@ -34,7 +34,7 @@ The program resides in the program body
 naviation -> program -> scan -> main -> ProgPou -> programbody
 ```
 
-<img src="../../assets/images/mitshubishi/programbody.png" alt="programbody.png" width="500"/>
+<img src="../../assets/images/mitsubishi/programbody.png" alt="programbody.png" width="500"/>
 
 ### Convert
 
@@ -52,7 +52,7 @@ After completing the program and converting it, the next part will be uploading 
 write to plc -> parameter+program/select all -> execute
 ```
 
-<img src="../../assets/images/mitshubishi/write.png" alt="write.png" width="500"/>
+<img src="../../assets/images/mitsubishi/write.png" alt="write.png" width="500"/>
 
 <br>
 
@@ -72,13 +72,13 @@ To remotely start, stop and reset the controller after uploading a new program
 ```
 CPU operation status -> (operation) -> execute
 ```
-<img src="../../assets/images/mitshubishi/run.png" alt="run.png" width="300"/>
+<img src="../../assets/images/mitsubishi/run.png" alt="run.png" width="300"/>
 
 ### monitor
 
 To monitor the current status of the PLC, Select **Start Monitoring** under the **Program Common** tab
 
-<img src="../../assets/images/mitshubishi/monitor.png" alt="monitor.png" width="500"/>
+<img src="../../assets/images/mitsubishi/monitor.png" alt="monitor.png" width="500"/>
 
 <br>
 
