@@ -74,11 +74,27 @@ CPU operation status -> (operation) -> execute
 ```
 <img src="../../assets/images/mitsubishi/run.png" alt="run.png" width="300"/>
 
-### monitor
+### Monitor
 
 To monitor the current status of the PLC, Select **Start Monitoring** under the **Program Common** tab
 
 <img src="../../assets/images/mitsubishi/monitor.png" alt="monitor.png" width="500"/>
+
+<br>
+
+### Continuous commenting
+
+Enabling 'device comment continuously' will ask you to add comment for each component after they are assigned to a port automatically. It is recommnend since adding comment(device name) to each component will help to identify port assigned to a component easily.
+
+<img src="../../assets/images/mitsubishi/comment.png" alt="comment.png" width="500"/>
+
+<br>
+
+### Write mode
+
+Check whether you are in write mode after simulation or run, You have to be in write mode to edit the program.
+
+<img src="../../assets/images/mitsubishi/writemode.png" alt="writemode.png" width="200"/>
 
 <br>
 
