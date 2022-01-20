@@ -7,6 +7,8 @@
 - start -> motor 1 
 - stop -> all stop
 
+  - solution [here](../../mitshubishi/programs/problem1.gx3)
+
 ---
 
 #### Problem 2
@@ -15,6 +17,8 @@
 
 - Design a automated car parking system
 - The goal is to park the vechile and bring the elevator back to level 1
+
+  - solution [here](../../mitshubishi/programs/problem2.gx3)
 
 ---
 
