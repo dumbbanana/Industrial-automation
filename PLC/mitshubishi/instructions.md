@@ -138,15 +138,9 @@ For simple implementation refer
 
 ---
 
-## Using memory bit
-#### Command
-#### Example
-
----
-
 ## Move
 
-Move command is used to shift values on one register to another. In addition to moving words and integers to a memory register, we can move data from and to special memory registors (conters C0, timers T0, )
+Move function block is used to shift values on one register to another. In addition to moving words and integers to a memory register, we can move data from and to special memory registors (conters C0, timers T0, time)
 
 #### Command
 
@@ -155,9 +149,38 @@ SYNTAX - MOV source destination
 ```
 MOV 5 D1
 ```
-
+Overwrites D1 register with the value 5 
 
 #### Example
+Some of the use cases for move function blocks are in HMIs where values are given to timers and counters by an operator. 
+
+---
+
+## Using memory registors
+
+Due to constraints on output and input ports in PLC modules, we cannot configure plc in same way as relay logic circuits. PLC programmer use memory bits as virtual input and output port. There are 65536 [2^16] memory bits available for general purpose use (m0, m1, m2, m3...). 
+
+as you know,
+
+```
+1 Byte = 8 bits 
+
+1 integer(D0,D1,D2...) = 16 bits
+
+1 double integer(D0,D2,D4) = 32 bits
+```
+Can't access or manupliate data as bytes in Fx-5u. Each integer/word consists of 16, changing values in m0, m1, m2,....,m15 will change value in D0.
+
+To access memory bit use M0 ; integers use D0 ; double integers are assigned through function block and instructions. while assigning double integers even number data registers are used to account for extra bits of data.
+
+| Bits | integer/word | Double integer |
+| :---: | :---: | :---: |
+| M0 - M15 | D0 |  |
+| M16 - M31 | D1 | D0 |
+| M32 - M47 | D2 |  |
+| M48 - M63 | D3 | D1 |
+
+For simple implementation refer
 
 ---
 
@@ -180,12 +203,6 @@ MOV 5 D1
 ---
 
 ## Decrement 
-#### Command
-#### Example
-
----
-
-## Set 
 #### Command
 #### Example
 
