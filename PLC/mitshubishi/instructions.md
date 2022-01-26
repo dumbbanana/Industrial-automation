@@ -152,7 +152,9 @@ MOV 5 D1
 Overwrites D1 register with the value 5 
 
 #### Example
-Some of the use cases for move function blocks are in HMIs where values are given to timers and counters by an operator. 
+Some of the use cases for move function blocks are in HMIs where values are given to timers and counters by an operator.
+
+For simple implementation refer
 
 ---
 
@@ -179,14 +181,39 @@ To access memory bit use M0 ; integers use D0 ; double integers are assigned thr
 | M16 - M31 | D1 | D0 |
 | M32 - M47 | D2 |  |
 | M48 - M63 | D3 | D1 |
+| ... | ... | ... |
 
 For simple implementation refer
 
 ---
 
 ## Comparator
+
+Comparators are used to compare values between set values and values in data registers. Comparators are input component, they function as a switch in circuit.
+
 #### Command
+
+SYNTAX - operation input reference
+
+```
+< D0 100
+```
+compares D0 value to 100 and output true; triggers the circuit when ```D0 < 100```
+
+| Function | Symbol |
+| :---: | :---: |
+| greater than | > |
+| less than | < |
+| equal to | = |
+| less than/equal to | <= |
+| greater/equal to | >= |
+| not equal | < > |
+
 #### Example
+
+Some of the use cases for comparators are in temperature control.
+
+For simple implementation refer
 
 ---
 
@@ -209,20 +236,58 @@ For simple implementation refer
 ---
 
 ## Jump 
+
+This function is used to skip several rungs in a program. Jump is an output component. If jump is triggered, it skips from command line to the line where page no is mentioned.
+
 #### Command
+
+SYNTAX - ConditionalJump PageNumber
+
+```
+CJ P0
+```
+skips from CJ to p0 line if trigerred.
+
 #### Example
+
+Some of the use cases for jump are in toggle for mode of operation and featues on HMI.
+
+For simple implementation refer
 
 ---
 
 ## Set
+
+This is used to set the output or memory bit high (1) if trigerred and stays high unless reset is trigered.
+
 #### Command
+
+SYNTAX - SET output (Y0 or M0)
+
+```
+SET y0
+```
 #### Example
+
+For simple implementation refer
 
 ---
 
 ## Reset 
+
+This is used to set the output or memory bit low  (0) if trigerred
+
 #### Command
+
+SYNTAX - RESET output (Y0 or M0)
+
+```
+RESET y0
+```
+
 #### Example
+
+For simple implementation refer
 
 ---
 
