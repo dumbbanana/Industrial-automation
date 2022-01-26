@@ -453,7 +453,50 @@ For simple implementation refer
 ---
 
 ## Math functions
+
+These are used to execute mathematic operations on data register in PLC controller. Math operations can be executed only on integers (D0, C0, T0)
+
+```+ -> add```
+```- -> sub```
+```X -> mul```
+```% -> div```
+
 #### Command
+
+SYNTAX - function input input output
+
+```
+ADD C0 10 D0
+```
+adds counter0 to 10 and stores it to D0
+
+```for float```
+| Command | function |
+| :-----: | :------: |
+| E+ | add decimal values |
+| E- | sub decimal values |
+| E/ | div decimal values |
+| E* | mul decimal values |
+
+```for double integers```
+| Command | function |
+| :-----: | :------: |
+| DADD | add double integer values |
+| DSUB | sub double integer values |
+| DDIV | div double integer values |
+| DMUL | mul double integer values |
+
+```act on pulse```
+| Command | function |
+| :-----: | :------: |
+| ADDP | add on pulse |
+| SUBP | sub on pulse |
+| DIVP | div on pulse |
+| MULP | mul on pulse |
+
+- use special memory ```sm400``` to keep the block always ON.
+- for division use double integer to account for decimal values.
+
 #### Example
 
 ---
