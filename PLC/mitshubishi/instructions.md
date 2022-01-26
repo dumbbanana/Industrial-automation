@@ -217,21 +217,43 @@ For simple implementation refer
 
 ---
 
-## Math functions
-#### Command
-#### Example
-
----
-
 ## Increment 
+
+Increments the data by '1'
+
 #### Command
+
+```
+SYNTAX - INC register
+```
+```DINC -> increments double integer```
+
+```INCP -> increments on pulse``` [To avoid incrementing multiple times on single input]
+
 #### Example
+
+Used to count products on line or packages on conveyors or to keep track of system cycle
+
+For simple implementation refer
 
 ---
 
 ## Decrement 
+
+Decrements the data by '1'
+
 #### Command
+
+```
+SYNTAX - DEC register
+```
+```DDEC -> increments double integer```
+
+```DECP -> increments on pulse``` [To avoid decrementing multiple times on single input]
+
 #### Example
+
+For simple implementation refer
 
 ---
 
@@ -401,9 +423,36 @@ RET - Close the subpage
 
 Some of the use cases for subroutines are toggling between manual and auto modes, toggling between weekly and weekend schedules.
 
+For simple implementation refer
+
 ---
 
 ## Master Contol 
+
+Master control literally puts a switch on power line and turns off power to the rungs till mentioned. This is a output component, if trigerred the rung section will be turned off.
+
+#### Command
+
+SYNTAX - function tag-of-MC memory-bit
+
+```
+MC N0 M0
+```
+at start of the section
+```
+MCR N0
+```
+at end of the section
+
+#### Example
+
+This can be used as emergency stop in case to keep the devices running which are depended on input signal.
+
+For simple implementation refer
+
+---
+
+## Math functions
 #### Command
 #### Example
 
