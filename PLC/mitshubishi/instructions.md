@@ -292,20 +292,60 @@ For simple implementation refer
 ---
 
 ## Comparision 
+
+Comparision are used to compare two input values and outputs 3 different values based on whether first values is greater than, less than or equal to second value.
+
 #### Command
+
+SYNTAX - CMP firstinput secondinput output
+
+```
+CMP D0 D1 Y0
+```
+sets outputs high based on values 
+
+```if > then y0```
+
+```if = then y1```
+
+```if < then y2```
+
+outputs are saved in consecutive registers from the output mentioned in command.
+
 #### Example
+
+Can be used instead of multiple comparators
+
+For simple implementation refer
 
 ---
 
-## Zone comparison 
+## Zone comparison
+
+Zone comparison compares the input value to the given range and outputs 3 different values based on whether input values is greater than, less than or in between the given range.
+
 #### Command
+
+SYNTAX - ZCP LowestRange HighestRange  InputValue Output
+
+```
+ZCP D0 D1 D2 Y0
+```
+sets outputs high based on values 
+
+```if D2<D0 then y0 is ON```
+
+```if D0<D2<D1 then y1 is ON```
+
+```if D2>D1 then y2 is ON```
+
+outputs are saved in consecutive registers from the output mentioned in command.
+
 #### Example
 
----
+Can be used instead of multiple comparators
 
-## Master Contol 
-#### Command
-#### Example
+For simple implementation refer
 
 ---
 
@@ -360,6 +400,12 @@ RET - Close the subpage
 #### Example
 
 Some of the use cases for subroutines are toggling between manual and auto modes, toggling between weekly and weekend schedules.
+
+---
+
+## Master Contol 
+#### Command
+#### Example
 
 ---
 
