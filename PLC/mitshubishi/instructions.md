@@ -310,14 +310,56 @@ For simple implementation refer
 ---
 
 ## Real Time Clock (RTC) 
-#### Command
-#### Example
+
+RTC stores real time values (System time) in special data registers (SD) which can be accessed for for math functions and comparators.
+
+#### registers
+
+```
+SD 8013 -> Default Seconds
+```
+```
+SD 8014 -> Default Minutes
+```
+```
+SD 8015 -> Default Hours
+```
+```
+SD 8016 -> Default Date
+```
+```
+SD 8017 -> Default Month
+```
+```
+SD 8018 -> Default Year
+```
+```
+SD 8019 -> Default Day of week
+```
 
 ---
 
 ## Subroutine 
+
+This function is used to toggle between multiple pages in the program. This is an outpt function, works when triggered. A section of a program is allocted as main page which will be always on. Solutions are written in subpages. 
+
 #### Command
+
+SYNTAX - Function PageNumber
+
+```
+CALL P0
+```
+```
+FEND - Close the main page
+```
+```
+RET - Close the subpage
+```
+
 #### Example
+
+Some of the use cases for subroutines are toggling between manual and auto modes, toggling between weekly and weekend schedules.
 
 ---
 
