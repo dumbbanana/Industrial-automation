@@ -499,8 +499,28 @@ adds counter0 to 10 and stores it to D0
 
 #### Example
 
+For simple implementation refer
+
 ---
 
 ## Scaling
+
+Scaling is used to convert analog values (variations in voltage) from a sensor to pulse with ADC then used as reference input for appropriate output.
+
+For instance assume a sensor used to display the water level in a tank (0 - 40 feet)
+
+```
+0 - 10V <- sensor 
+  |
+  
+```
+
+
 #### Command
+
+
+
 #### Example
+
+
+
